@@ -2,9 +2,12 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/test
-  mongo:
-    database-name: axon
+      uri: mongodb+srv://johnny:password@cluster1.a6j0cb1.mongodb.net/?retryWrites=true&w=majority
+      auto-index-creation: true
+    redis:
+      host: localhost
+      port: 6379
+      timeout: 10000
     token-store:
       enabled: true
     saga-store:
